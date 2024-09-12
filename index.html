@@ -131,23 +131,39 @@
       let dot = document.createElement('p');
       dot.innerHTML = '.'
       dot.style.position = 'absolute';
-      dot.style.transition = 'all 1s';
-      dot.style.fontSize = '20px';
+      // dot.style.transition = 'all 1s';
+      // dot.style.animation = 'shoot 2s linear';
+      dot.style.fontSize = '200px';
+      dot.style.color = 'red'
+      document.body.appendChild(dot);
+
       let x = Math.trunc(Math.random() * 100);
       let y = Math.trunc(Math.random() * 100);
-      function shoot() {
-        dot.style.top += x + '%';
-        dot.style.left += y + '%';
-        document.body.appendChild(dot);
-        document.body.removeChild(dot);
+      
+      dot.style.top = x + 'px';
+      dot.style.left = y + 'px';
+
+      function move(){
+        x++;
+        y++;
+        dot.style.top = x + 'px';
+        dot.style.left = y + 'px';
       }
 
+      setInterval(move, 500);
+
+      // document.body.removeChild(dot);
+
+      setTimeout(() => {document.body.removeChild(dot)}, Math.trunc(Math.random() * 3000));
+      
       // console.log(dot)
 
       // document.body.appendChild(dot);
     }
 
-    // setInterval(shootingStar, 3000)
+    shootingStar()
+
+    // setInterval(shootingStar, Math.trunc(Math.random * 5000));
   </script>
 </body>
 
