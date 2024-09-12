@@ -7,6 +7,8 @@
   <link rel="icon" href="favicon.png">
   <title>Code Locker</title>
   <style>
+    @import url('https://fonts.cdnfonts.com/css/trebuchet-ms-2');
+
     body {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -15,6 +17,7 @@
       align-items: center;
       min-height: 90vh;
       width: 95%;
+      position: relative;
     }
 
     h1 {
@@ -122,6 +125,30 @@
     </a>
   </div>
   </div>
+
+  <script>
+    function shootingStar() {
+      let dot = document.createElement('p');
+      dot.innerHTML = '.'
+      dot.style.position = 'absolute';
+      dot.style.transition = 'all 1s';
+      dot.style.fontSize = '20px';
+      let x = Math.trunc(Math.random() * 100);
+      let y = Math.trunc(Math.random() * 100);
+      function shoot() {
+        dot.style.top += x + '%';
+        dot.style.left += y + '%';
+        document.body.appendChild(dot);
+        document.body.removeChild(dot);
+      }
+
+      // console.log(dot)
+
+      // document.body.appendChild(dot);
+    }
+
+    // setInterval(shootingStar, 3000)
+  </script>
 </body>
 
 </html>
