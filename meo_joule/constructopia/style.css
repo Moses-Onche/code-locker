@@ -148,3 +148,19 @@ button {
 .benefits img {
   border-radius: 8px;
 }
+
+.list {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid;
+}
+.list img {
+  width: 220px;
+  border-radius: 22px;
+}
+
+.list p {
+  width: 30%;
+}
