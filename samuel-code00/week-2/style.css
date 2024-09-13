@@ -1,0 +1,356 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero-container{
+    background-color: #003b3e;
+    color: white;
+    padding-bottom: 90px;
+    /* height: 900px; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+.navlinks a{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.book{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin-left: 30px;
+    background-color: #01a65f;
+    border-radius: 30px;
+    
+}
+
+.book a{
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.hero-text{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 60px;
+}
+.hero-text h1{
+    font-size: 55px;
+    margin: auto;
+    width: 550px;
+}
+
+span{
+    background: linear-gradient(to right, #2eeb8a , #abde8c);
+    background-clip: text;
+    color: transparent;
+}
+
+.passport img{
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#img1{
+    position: relative;
+    margin-left: 30px;
+}
+#img2{
+    height: 40px;
+    position: absolute;
+    left: 230px;
+}
+
+/* .passport{
+    
+} */
+
+.passport p{
+    margin: 0;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 100px;
+}
+
+.woman{
+    height: 340px;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #cdd4d3, #909294);
+}
+
+#img3{
+   top: -50px;
+   position: relative;
+}
+
+.renew{
+    height: 390px;
+    width: 270px;
+    background-image: url(Assests/wind-turbine2.jpg);
+    background-size: cover;
+    /* opacity: 0.8; */
+    text-align: center;
+    border-radius: 20px;
+}
+
+.renew p{
+    margin: auto;
+    width: 220px;
+    font-size: 23px;
+    padding-top: 30px;
+    line-height: 40px;
+}
+
+.saving{
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 20px;
+    height: 140px;
+    width: 200px;
+}
+
+/* .half{
+    width: 00px;
+    height: 100px;
+    border: 5px solid #003b3e;
+    border-bottom-color: transparent;
+    border-radius: ;
+} */
+
+.free{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.free2{
+    color: black;
+    background-color: #01db82;
+    border-radius: 30px;
+    height: 44px;
+    width: 230px;
+    margin: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.free2 img{
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#img4{
+    position: relative;
+    margin-left: 50px;
+    left: 25px;
+}
+#img5{
+    right: 590px;
+    position: absolute;
+}
+
+.invest{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.invest1{
+    width: 240px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.believe{
+    width: 560px;
+    line-height: 30px;
+}
+
+.partners{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+.partners img{
+    width: 160px;
+    height: 60px;
+    border: 1px solid #eef2ee;
+    border-radius: 10px;
+}
+
+.benefit{
+    width: 90%;
+    margin: auto;
+    background-color: #f2f9f1;
+    border-radius: 20px;
+    margin-top: 150px;
+    padding-top: 50px;
+}
+
+.sub-benefits{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.box{
+    width: 300px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    height: 180px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.box  p{
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.box p + p{
+    color: #b3bcc3;
+}
+
+
+
+
+.renewal{
+    background-color: #003b3e;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    height: 380px;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.renewal h1{
+    font-size: 55px;
+    margin: 10px;
+}
+.renewal p{
+    line-height: 25px;
+    width: 440px;
+    margin: auto;
+}
+
+.renewal .book{
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    margin-left: 30px;
+    background-color:linear-gradient(to right, #2eeb8a , #abde8c);
+    border-radius: 30px;
+    margin: 40px auto;
+    
+    
+}
+
+.renewal .book a{
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-left: 25px;
+}
+
+/* footer */
+
+footer{
+    border-radius: 10px;
+    height: 300px;
+}
+
+footer h1{
+    margin-left: 150px;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-container div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-container p{
+    font-weight: bold;
+    color: black;
+}
+
+.footer-container div a{
+    display: block;
+    color: #818181;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.footer-puzzlify{
+    width: 350px;
+}
+footer hr{
+    color: #818181;
+    width: 84%;
+    margin: auto;
+}
+
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 86%;
+    /* padding-left: 15px; */
+    margin: auto;
+}
+
+.last div{
+    margin-left: 50px;
+}
+
+.last a{
+    color: #818181;
+    text-decoration: none;
+    padding-left: 10px;
+}
