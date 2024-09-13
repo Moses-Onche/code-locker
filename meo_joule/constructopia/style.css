@@ -10,12 +10,17 @@ body {
 }
 
 p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 200;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 .hero {
   background-color: #003B3E;
+  padding-bottom: 100px;
 }
 
 nav {
@@ -48,7 +53,7 @@ nav #links a {
   font-weight: 200;
 }
 
-nav #links button {
+button {
   background-color: #01DC82;
   padding: 10px 14px;
   border-style: none;
@@ -62,6 +67,7 @@ nav #links button {
 
 .hero center h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .hero center h1 strong {
@@ -69,4 +75,68 @@ nav #links button {
   background: linear-gradient(90deg, #01DC82, #f5fe7b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.investors {
+  padding: 100px;
+}
+
+.investors-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.investors-one h2 {
+  width: 16%;
+}
+
+.partner-logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner-logos img {
+  width: 140px;
+  height: 50px;
+  padding: 15px;
+  border: solid 1px rgb(231, 231, 231);
+  border-radius: 8px;
+}
+
+.benefits {
+  background-color: #F2F9F1;
+  margin: 90px 0;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.benefits div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits span {
+  background-color: white;
+  border-radius: 14px;
+  margin-right: 20px;
+  padding: 22px;
+  width: 36%;
+  border: solid 2px rgb(231, 231, 231);
+}
+
+.benefits span:last-child {
+  margin-right: 0;
+}
+
+.benefits h2 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.benefits center p {
+  width: 48%;
+  margin-bottom: 50px;
+  line-height: 20px;
 }
