@@ -11,7 +11,7 @@ body {
 
 p {
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 h2 {
@@ -117,13 +117,17 @@ button {
   justify-content: space-between;
 }
 
+.benefits div p {
+  line-height: 20px;
+}
+
 .benefits span {
   background-color: white;
   border-radius: 14px;
   margin-right: 20px;
   padding: 22px;
   width: 36%;
-  border: solid 2px rgb(231, 231, 231);
+  border: solid 1px rgb(231, 231, 231);
 }
 
 .benefits span:last-child {
@@ -139,4 +143,8 @@ button {
   width: 48%;
   margin-bottom: 50px;
   line-height: 20px;
+}
+
+.benefits img {
+  border-radius: 8px;
 }
