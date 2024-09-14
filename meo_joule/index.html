@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@meo_joule</title>
+  <style>
+    body {
+      position: relative;
+    }
+
+    a {
+      position: absolute;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="puzzlify/index.html">puzzlify</a>
+  <a href="constructopia/index.html">constructopia</a>
+  <script>
+    let projects = document.getElementsByTagName('a');
+
+    for (let i = 0; i < projects.length; i++) {
+      projects[i].style.top = Math.trunc(Math.random() * window.innerHeight) + 'px';
+      projects[i].style.left = Math.trunc(Math.random() * window.innerWidth) + 'px';
+    }
+  </script>
+</body>
+
+</html>

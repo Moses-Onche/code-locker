@@ -9,12 +9,25 @@ body {
   /* position: relative; */
 }
 
+p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.hero {
+  background-color: #003B3E;
+  padding-bottom: 100px;
+}
+
 nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 15px 60px;
-  background-color: #003B3E;
 }
 
 nav #logo {
@@ -28,6 +41,10 @@ nav span span {
   color: white;
 }
 
+nav span img {
+  border-radius: 4px;
+}
+
 nav #links a {
   text-decoration: none;
   color: white;
@@ -36,10 +53,214 @@ nav #links a {
   font-weight: 200;
 }
 
-nav #links button {
+button {
   background-color: #01DC82;
   padding: 10px 14px;
   border-style: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.hero center {
+  color: white;
+}
+
+.hero center h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero center h1 strong {
+  color: #003B3E;
+  background: linear-gradient(90deg, #01DC82, #f5fe7b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.investors {
+  padding: 100px;
+}
+
+.investors-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.investors-one h2 {
+  width: 16%;
+}
+
+.partner-logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner-logos img {
+  width: 140px;
+  height: 50px;
+  padding: 15px;
+  border: solid 1px rgb(231, 231, 231);
+  border-radius: 8px;
+}
+
+.benefits {
+  background-color: #F2F9F1;
+  margin: 90px 0;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.benefits div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits div p {
+  line-height: 20px;
+}
+
+.benefits span {
+  background-color: white;
+  border-radius: 14px;
+  margin-right: 20px;
+  padding: 22px;
+  width: 36%;
+  border: solid 1px rgb(231, 231, 231);
+}
+
+.benefits span:last-child {
+  margin-right: 0;
+}
+
+.benefits h2 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.benefits center p {
+  width: 48%;
+  margin-bottom: 50px;
+  line-height: 20px;
+}
+
+.benefits img {
+  border-radius: 8px;
+}
+
+.list {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: solid; */
+}
+
+.list h2 {
+  width: 30%;
+}
+.list img {
+  width: 220px;
+  border-radius: 22px;
+}
+
+.list p {
+  width: 30%;
+}
+
+.list box-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.list span {
+  padding: 4px;
+  border: solid 2px rgb(231, 231, 231);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border-top: 1px solid rgb(231, 231, 231);
+}
+
+.cofounders {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  /* height: 10%; */
+  border: solid;
+}
+
+.cofounders img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.cofounders div {
+  width: 45%;
+}
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.support div {
+  width: 50%;
+}
+
+.support div button {
+  margin-top: 40px;
+}
+
+.accordion div {
+  width: 100%;
+  padding: 0 16px;
+  border: solid 2px rgb(231, 231, 231);
+  border-radius: 20px;
+}
+
+.accordion-option {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  border: solid;
+}
+
+.accordion div p {
+  border: solid;
+  /* margin: 8px 0; */
+}
+
+.renew {
+  background-color: #003B3E;
+  padding: 70px;
+  margin: 100px;
+  border-radius: 20px;
+}
+
+.renew h2 {
+  color: white;
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+.renew strong {
+  color: #01DC82;
+}
+
+.renew p {
+  width: 32%;
+  color: white;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 20px;
 }
