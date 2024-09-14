@@ -6,6 +6,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 10px;
 }
 
 .navlinks{
@@ -64,6 +65,7 @@ a.active{
 .hero-container{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .hero-left{
