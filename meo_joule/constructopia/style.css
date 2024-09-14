@@ -209,6 +209,58 @@ hr {
   padding: 100px;
 }
 
-.support div p {
-  margin-bottom: 40px;
+.support div {
+  width: 50%;
+}
+
+.support div button {
+  margin-top: 40px;
+}
+
+.accordion div {
+  width: 100%;
+  padding: 0 16px;
+  border: solid 2px rgb(231, 231, 231);
+  border-radius: 20px;
+}
+
+.accordion-option {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  border: solid;
+}
+
+.accordion div p {
+  border: solid;
+  /* margin: 8px 0; */
+}
+
+.renew {
+  background-color: #003B3E;
+  padding: 70px;
+  margin: 100px;
+  border-radius: 20px;
+}
+
+.renew h2 {
+  color: white;
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+.renew strong {
+  color: #01DC82;
+}
+
+.renew p {
+  width: 32%;
+  color: white;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 20px;
 }
