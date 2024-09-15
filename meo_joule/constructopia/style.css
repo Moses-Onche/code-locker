@@ -12,6 +12,7 @@ body {
 p {
   font-size: 12px;
   font-weight: 500;
+  line-height: 16px;
 }
 
 h2 {
@@ -88,7 +89,7 @@ button {
 }
 
 .investors-one h2 {
-  width: 16%;
+  width: 20%;
 }
 
 .partner-logos {
@@ -118,7 +119,7 @@ button {
 }
 
 .benefits div p {
-  line-height: 20px;
+  
 }
 
 .benefits span {
@@ -142,7 +143,7 @@ button {
 .benefits center p {
   width: 48%;
   margin-bottom: 50px;
-  line-height: 20px;
+  /* line-height: 20px; */
 }
 
 .benefits img {
@@ -262,5 +263,5 @@ hr {
   margin-bottom: 20px;
   font-size: 10px;
   font-weight: 200;
-  line-height: 20px;
+  /* line-height: 20px; */
 }
