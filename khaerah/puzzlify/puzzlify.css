@@ -1,0 +1,507 @@
+body {
+    margin-left: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home {
+    background-color: #211056;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+.teams{
+    width: 40px;
+    height: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 30px;
+    color: black;
+}
+
+/* Styling for navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    border-radius: 70px;
+    background: #e8eaeb;
+    padding: 15px;
+    border: 1px solid #e8eaeb;
+
+}
+
+.nav-links a.home {
+    color: white;
+    background-color: #211056; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.nav-links a.home:hover {
+    color: #e8eaeb;
+    background-color: #311056; 
+}
+
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+}
+
+/* Styling for the menu toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+}
+
+.book {
+    background-color: #211056;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 90px;
+    border-radius: 20px;
+}
+
+
+/* styling for solve section */
+.solve {
+    background: #D1F383;
+    padding: 20px;
+    border: 1px solid #D1F383;
+    border-radius: 9px;
+    width: 50%;
+    /* margin-right: 70px; */
+}
+
+.creative {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.split {
+    display: flex;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 50%;
+}
+
+
+/* Control image size */
+.image-container {
+    /* position: relative; */
+    width: 43%;
+    height: auto;
+    max-width: 580px;
+}
+
+.image {
+    margin-left: 20px;
+    width: 100%;
+    height: 600px;
+    max-height: 100%;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+
+.solution {
+    margin-bottom: 20px;
+    padding-right: 20px;
+    font-size: 1.3rem;
+}
+
+.button {
+    margin-bottom: 20px;
+}
+
+.talk {
+    background-color: #211056;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* portfolio section */
+.Portfolio {
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 1px;
+}
+
+.industries {
+    display: flex;
+
+}
+
+.see {
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid;
+    background: transparent;
+    margin-left: 500px;
+}
+
+.across{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.dicover {
+    margin-top: 100px;
+}
+
+.box {
+    background: #E1E1E1;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+
+.chatbot {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    left: 50px;
+    margin-top: 40px;
+}
+
+.shadow{
+   margin-top: 50px;
+}
+
+.yield{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    left: 450px;
+    /* bottom: 10px; */
+    margin-top: -280px;
+}
+
+.cryptexx{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 840px;
+    margin-top: 30px;
+}
+
+.farm{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+/* .image {
+    border-radius: 7px;
+    width: 580px;
+    height: 600px;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+} */
+
+.trusted {
+    margin-top: 160px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 180px;
+}
+
+.adobe {
+    width: 80px;
+}
+
+.netflix {
+    width: 80px;
+    height: 60px;
+}
+
+.spotify {
+    width: 120px;
+}
+
+
+.team {
+    background: #EBE6FD;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.explore {
+    text-align: center;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.user {
+    margin-top: 30px;
+    width: 166%;
+    height: 300px;
+    max-height: 100%;
+    border-radius: 7px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.design {
+    margin-top: 30px;
+    background: #D1F383;
+    height: 280px;
+    width: 450px;
+    border-radius: 8px;
+    margin-left: 320px;
+    padding: 10px;
+}
+
+.designing {
+    background: #BEDCFE;
+    height: 280px;
+    width: 400px;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.lady {
+    border-radius: 8px;
+    /* margin-left: 200px; */
+    width: 790px;
+    height: 300px;
+    max-height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.work {
+    margin-top: 20px;
+}
+
+.designs {
+    margin-top: 30px;
+    background: #EBE6FD;
+    height: 280px;
+    width: 450px;
+    border-radius: 8px;
+    margin-left: 320px;
+    padding: 10px;
+}
+
+.down {
+    padding-top: 50px;
+}
+
+.UI {
+    font-size: 20px;
+}
+
+.one {
+    font-size: 40px;
+}
+
+.explore-section {
+    margin-top: 190px;
+}
+
+.container {
+    background: #D1F383;
+    width: 600px;
+    border-radius: 8px;
+}
+
+.flex {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+
+}
+
+.ready {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 35px;
+    line-height: 0px;
+
+}
+
+.img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+/* 
+.button2 {
+    margin-bottom: 20px; 
+} */
+
+.talk2 {
+    background-color: #211056;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 220px;
+    margin-top: 30px;
+}
+
+.Contact {
+    line-height: 0px;
+    text-align: center;
+}
+
+.faq {
+    display: flex;
+    margin-top: 30px;
+}
+
+.Questions{
+    font-size: 30px;
+}
+
+.What{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.offer {
+    background: #FFEDCD;
+    border-radius: 9px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 500px;
+}
+
+.offers {
+    background: #FFEDCD;
+    border-radius: 9px;
+    height: 90px;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+
+.request {
+    border: 2px solid #EDEEEF;
+    height: 40px;
+    border-radius: 9px;
+    padding-left: 10px;
+    padding-top: 7px;
+    /* margin-top: 20px; */
+}
+
+.working {
+    margin-top: 30px;
+    width: 700px;
+    height: 625px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.footer {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    height: 370px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.logoo {
+    color: white;
+    padding-left: 110px;
+    padding-top: 20px;
+}
+
+hr {
+    color: white;
+    width: 1100px;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-around;
+}
+
+.more {
+    background: #211056;
+}
+
+/* Responsive design: Show menu toggle on smaller screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        background: #e8eaeb;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Adjust based on navbar height */
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .book {
+        margin-right: 0;
+        /* Remove margin on mobile */
+    }
+}
