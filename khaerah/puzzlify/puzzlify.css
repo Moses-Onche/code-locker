@@ -475,33 +475,3 @@ hr {
     background: #211056;
 }
 
-/* Responsive design: Show menu toggle on smaller screens */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        width: 100%;
-        background: #e8eaeb;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        /* Adjust based on navbar height */
-        left: 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .book {
-        margin-right: 0;
-        /* Remove margin on mobile */
-    }
-}
