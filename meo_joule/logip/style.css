@@ -11,10 +11,39 @@ body {
   padding: 10px 20px;
 }
 
+.left ul {
+  padding: 0;
+}
+
 .left li {
   list-style: none;
 }
 
-.left li a {
+a {
   text-decoration: none;
+}
+
+.upgrade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(white, #f4f4f4);
+  border-radius: 20px;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+
+.upgrade button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #b5d8f6;
+  border-style: none;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.upgrade p {
+  width: 70%;
+  text-align: center;
 }
