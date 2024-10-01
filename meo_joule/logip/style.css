@@ -47,3 +47,7 @@ a {
   width: 70%;
   text-align: center;
 }
+
+.plus {
+  float: right;
+}
