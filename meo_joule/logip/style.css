@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   background-color: #e0dfdf;
-  padding: 10px;
+  padding: 25px;
+  font-family: Montserrat;
+  display: flex;
 }
 
 .left {
   width: 24%;
   background-color: #f4f4f4;
   border-radius: 20px;
-  /* margin: 0 10px; */
+  margin-right: 25px;
   padding: 25px;
 }
 
@@ -17,10 +21,19 @@ body {
 
 .left li {
   list-style: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.left li a {
+  display: flex;
+  align-items: center;
+  /* border: solid; */
 }
 
 a {
   text-decoration: none;
+  color: grey;
 }
 
 .upgrade {
@@ -48,10 +61,26 @@ a {
   text-align: center;
 }
 
-.plus {
-  float: right;
-}
-
 .left-icon {
   margin-right: 12px;
+}
+
+.help div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.heading {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
 }
