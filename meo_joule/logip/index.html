@@ -36,15 +36,25 @@
           <img src="images/img-1.jpg" alt="profile picture" class="profile-pic">
           <div class="online" style="width: 8px; height: 8px; background-color: green;"></div>
         </div>
-        <div style="border-right: solid 2px rgb(207, 203, 203);">
+        <div style="border-right: solid 2px rgb(245, 240, 240); margin-left: -70px; padding: 0 20px;">
           <h5 style="margin: 0;">Margaret Fletcher</h5>
           <p style="font-size: smaller;">Project Manager</p>
         </div>
-        <p><box-icon name='calendar-week'></box-icon>27 Feb</p>
+        <div class="indicator-icons">
+          <box-icon name='calendar-week'></box-icon>
+          <p style="margin-left: 8px;">27 Feb</p>
+        </div>
       </div>
 
-      <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 40%;">
         <input type="text" name="search" id="search-bar" placeholder="Search">
+        <div class="indicator-icons" style="position: relative;">
+          <div class="online" style="position: absolute; top: 2%; right: 2%;"></div>
+          <box-icon name='bell'></box-icon>
+        </div>
+        <div class="indicator-icons">
+          <box-icon name='message-rounded-dots'></box-icon>
+        </div>
       </div>
     </div>
     <div class="main">
@@ -74,7 +84,10 @@
       <div class="details">
         <div class="team">
           <h3>Team</h3>
-          <p>63</p>
+          <div class="indicator-icons" style="display: flex; color: blue;">
+            <box-icon name='user' color="blue" style="width: 20x; height: 20px;"></box-icon>
+            <p>63</p>
+          </div>
         </div>
         <div class="project"></div>
       </div>
