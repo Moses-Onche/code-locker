@@ -14,21 +14,25 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 90vh;
-      width: 95%;
+      /* min-height: 90vh; */
+      /* width: 95%; */
       position: relative;
     }
 
     h1 {
       margin-bottom: 10px;
     }
+
+    a {
+      text-decoration: none;
+    }
     
     .locker-main {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      width: 60%;
-      /* border: solid 1px black; */
+      width: 50%;
+      border: solid 1px black;
       /* padding: 20px; */
     }
 
@@ -39,16 +43,15 @@
     }
 
     .locker {
-      width: 30%;
-      height: 20vh;
+      width: 250px;
+      height: 150px;
       background-color: black;
-      margin: 2%;
+      margin: 20px;
       color: black;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      text-decoration: none;
       transition: all 0.5s ease-out;
     }
 
@@ -56,22 +59,23 @@
       .locker {
         width: 40%;
         margin: 2%;
-        height: 20vh;
+        height: 20%;
         color: white;
       }
     }
 
-    .locker p:first-child{
+    .locket-white {
       background-color: white;
       color: white;
-      width: 30%;
+      width: 50px;
+      /* height: 20px; */
       align-self: center;
       text-align: center;
       border-radius: 8px;
     }
 
     @media only screen and (max-width: 600px) {
-      .locker p:first-child {
+      .locker-white {
         width: 40%;
         font-size: 10px;
         color: black;
@@ -102,9 +106,12 @@
 <body>
   <h1>code-locker</h1>
   <div class="locker-main">
-      <a class="locker" href="khaerah/index.html">
-        <p>O</p>
-        <p>@khaerah</p>
+      <a href="khaerah/index.html">
+        <div class="locker">
+          <p>O</p>
+          <p>@khaerah</p>
+        </div>
+        
       </a>
       <a class="locker" href="okosisione/index.html">
         <p>O</p>
@@ -118,7 +125,25 @@
         <p>O</p>
         <p>@meo_joule</p>
       </a>
-    </div>
+      <a href="">
+        <div class="locker">
+          <p class="locker-white">O</p>
+          <p>@mustazeez06</p>  
+        </div>
+        
+      </a>
+      <!-- <a class="locker" href="meo_joule/index.html"></a>
+        <p>O</p>
+        <p>@meo_joule</p>
+      </a>
+      <a class="locker" href="mustazeez06/index.html"></a>
+        <p>O</p>
+        <p>@mustazeez06</p>
+      </a>
+      <a class="locker" href="mustazeez06/index.html"></a>
+        <p>O</p>
+        <p>@mustazeez06</p>
+      </a> -->
   </div>
 
   <script>
