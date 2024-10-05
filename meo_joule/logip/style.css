@@ -169,6 +169,7 @@ a {
 
 .team {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -220,4 +221,13 @@ a {
   padding: 25px;
   display: flex;
   flex-direction: column;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* border: solid; */
+  margin: 10px 0;
 }
