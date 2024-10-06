@@ -32,6 +32,11 @@
       <div class="help">
         <div><box-icon name='help-circle' class="left-icon"></box-icon><a href="">Help and Information</a></div>
         <div><box-icon name='log-out-circle' class="left-icon"></box-icon><a href="">Logout</a></div>
+        <p>Designed by
+          <a href="https://dribbble.com/shots/20807295-Logip-Admin-Dashboard-Analytics-UX">
+            Halo Lab
+          </a>
+        </p>
       </div>
     </div>
   </div>
@@ -60,7 +65,7 @@
         <input type="text" name="search" id="search-bar" placeholder="Search">
         <div class="indicator-icons" style="position: relative;">
           <div class="online" style="position: absolute; top: 2%; right: 2%;"></div>
-          <box-icon name='bell'></box-icon>
+          <box-icon name='bell' style="cursor: pointer;" id="sike"></box-icon>
         </div>
         <div class="indicator-icons">
           <box-icon name='message-rounded-dots'></box-icon>
@@ -214,5 +219,28 @@
       </div>
     </div>
   </div>
+
+  <script>
+    let bell = document.getElementById('sike');
+    let bellDiv = document.getElementsByClassName('indicator-icons')
+    console.log(bellDiv[1]);
+    bell.addEventListener('click', function(){
+      let pop = document.createElement('div');
+      pop.innerHTML = 'Sike!'
+      pop.style.position = 'absolute';
+      pop.style.padding = '10px';
+      pop.style.backgroundColor = 'black';
+      pop.style.color = 'white';
+      pop.style.borderRadius = '15px';
+      pop.style.top = '-30px';
+      pop.style.left = '-8px';
+      bellDiv[1].appendChild(pop);
+
+      bell.addEventListener('mouseout', function(){
+        pop.remove();
+      })
+    })
+    
+  </script>
 </body>
 </html>
