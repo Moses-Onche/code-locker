@@ -5,6 +5,7 @@ body {
   padding: 25px;
   font-family: Montserrat;
   display: flex;
+  height: max-content;
 }
 
 .left {
@@ -104,7 +105,6 @@ a {
   background-color: white;
   border-radius: 20px;
   margin-right: 13px;
-  border: solid;
   display: flex;
   flex-direction: column;
   align-items: center;
