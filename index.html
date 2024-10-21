@@ -101,9 +101,16 @@
       transform: translateY(-5px);
       color: white;
     }
+
+    #dot {
+      position: absolute;
+      font-size: 30px;
+      color: lightcoral;
+    }
   </style>
 </head>
 <body>
+  <p id="dot">.</p>
   <h1>code-locker</h1>
   <div class="locker-main">
       <a href="khaerah/index.html">
@@ -147,27 +154,32 @@
   </div>
 
   <script>
-    function shootingStar() {
-      let dot = document.createElement('p');
-      dot.innerHTML = '.'
-      dot.style.position = 'absolute';
-      dot.style.transition = 'all 1s';
-      dot.style.fontSize = '20px';
-      let x = Math.trunc(Math.random() * 100);
+    let dot = document.getElementById("dot");
+    // console.log(dot)
+    function shootingStar(){
       let y = Math.trunc(Math.random() * 100);
-      function shoot() {
-        dot.style.top += x + '%';
-        dot.style.left += y + '%';
-        document.body.appendChild(dot);
-        document.body.removeChild(dot);
+      let x = Math.trunc(Math.random() * 100);
+      // let a = Math.trunc(Math.random() * 10);
+      let a = 0;
+      dot.style.top = y + "%";
+      dot.style.left = x + "%";
+
+      function shoot(){
+        dot.style.display = 'block'
+        if (a == 20){
+          dot.style.display = 'none';
+          a = 0;
+        } else {
+          a += 5;
+          dot.style.top = y + a + "%";
+          dot.style.left = x + a + "%";
+        }
       }
 
-      // console.log(dot)
-
-      // document.body.appendChild(dot);
+      setInterval(shoot, 1000);
     }
 
-    // setInterval(shootingStar, 3000)
+    setInterval(shootingStar, 2000);
   </script>
 </body>
 </html>
