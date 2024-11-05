@@ -166,20 +166,20 @@
 
       function shoot(){
         dot.style.display = 'block'
-        if (a == 20){
+        if (a == 10){
           dot.style.display = 'none';
           a = 0;
         } else {
-          a += 5;
+          a++;
           dot.style.top = y + a + "%";
           dot.style.left = x + a + "%";
         }
       }
 
-      setInterval(shoot, 1000);
+      // setInterval(shoot, 500);
     }
 
-    setInterval(shootingStar, 2000);
+    // setInterval(shootingStar, 2000);
   </script>
 </body>
 </html>
