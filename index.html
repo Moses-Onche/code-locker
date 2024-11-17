@@ -26,6 +26,13 @@
     a {
       text-decoration: none;
     }
+
+    p {
+      font-size: 14px;
+      color: black;
+      transition: all 1s;
+      margin-left: 12px;
+    }
     
     .locker-main {
       display: flex;
@@ -82,30 +89,9 @@
       }
     }
 
-    .locker p:last-child {
-      margin-left: 10px;
-      font-size: 12px;
-      width: 100%;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .locker p:last-child {
-        margin: 0;
-        padding-left: 8px;
-        padding-bottom: 8px;
-        font-size: 10px;
-      }
-    }
-
     .locker:hover {
       transform: translateY(-5px);
       color: white;
-    }
-
-    #dot {
-      position: absolute;
-      font-size: 30px;
-      color: lightcoral;
     }
   </style>
 </head>
@@ -155,12 +141,23 @@
   <script>
     const timeOfDay = new Date().getHours();
     const locker = document.querySelectorAll(".locker");
+    const names = document.querySelectorAll("p");
     
     if (timeOfDay >= 19 && timeOfDay <= 24){
       document.body.style.backgroundColor = "black";
       document.querySelector("h1").style.color = "white";
+      
       for (let i = 0; i < locker.length; i++){
         locker[i].style.backgroundColor = "grey";
+        names[i].style.color = "grey";
+
+        locker[i].addEventListener("mouseover", function(){
+          names[i].style.color = "white";
+        })
+
+        locker[i].addEventListener("mouseout", function(){
+          names[i].style.color = "grey";
+        })
       }
     }
   </script>
