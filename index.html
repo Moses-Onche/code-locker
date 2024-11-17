@@ -35,12 +35,18 @@
       justify-content: center;
       flex-wrap: wrap;
       width: 90%;
-      border: solid white;
     }
 
     @media (min-width: 600px) {
       .locker-main {
         width: 600px;
+      }
+
+      p {
+        font-size: 12px;
+        transition: all 1s;
+        margin-left: 12px;
+        color: white;
       }
     }
 
@@ -64,7 +70,6 @@
 
     .locker:hover {
       transform: translateY(-5px);
-      color: white;
     }
   </style>
 </head>
@@ -98,22 +103,32 @@
     const timeOfDay = new Date().getHours();
     const locker = document.querySelectorAll(".locker");
     const names = document.querySelectorAll("p");
-    
-    if (timeOfDay >= 19 && timeOfDay <= 24){
-      document.body.style.backgroundColor = "black";
-      document.querySelector("h1").style.color = "white";
-      
-      for (let i = 0; i < locker.length; i++){
-        locker[i].style.backgroundColor = "grey";
-        names[i].style.color = "grey";
+    let screenSize = window.innerWidth;
 
-        locker[i].addEventListener("mouseover", function(){
-          names[i].style.color = "white";
-        })
-
-        locker[i].addEventListener("mouseout", function(){
+    if (screenSize > 768) {
+      if (timeOfDay >= 19 && timeOfDay <= 24){
+        document.body.style.backgroundColor = "black";
+        document.querySelector("h1").style.color = "white";
+        
+        for (let i = 0; i < locker.length; i++){
+          locker[i].style.backgroundColor = "grey";
           names[i].style.color = "grey";
-        })
+
+          locker[i].addEventListener("mouseover", function(){
+            names[i].style.color = "white";
+          })
+
+          locker[i].addEventListener("mouseout", function(){
+            names[i].style.color = "grey";
+          })
+        }
+      }
+    } else {
+      for (let i = 0; i < names.length; i++){
+        names[i].style.color = "white";
+        locker[i].style.backgroundColor = "grey";
+        document.body.style.backgroundColor = "black";
+        document.querySelector("h1").style.color = "white";
       }
     }
   </script>
