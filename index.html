@@ -4,74 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
   <title>code-locker</title>
-  <style>
-    @import url('https://fonts.cdnfonts.com/css/trebuchet-ms-2');
-
-    body {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    h1 {
-      margin: 2px 0;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    p {
-      font-size: 14px;
-      transition: all 1s;
-      margin-left: 12px;
-    }
-    
-    .locker-main {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 90%;
-    }
-
-    @media (min-width: 600px) {
-      .locker-main {
-        width: 600px;
-      }
-
-      p {
-        font-size: 12px;
-        transition: all 1s;
-        margin-left: 12px;
-        color: white;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .locker-main {
-        width: 600px;
-      }
-    }
-
-    .locker {
-      width: 250px;
-      height: 150px;
-      background-color: black;
-      margin: 20px;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.5s ease-out;
-    }
-
-    .locker:hover {
-      transform: translateY(-5px);
-    }
-  </style>
 </head>
 <body>
   <h1>code-locker</h1>
@@ -99,38 +33,6 @@
 
   </div>
 
-  <script>
-    const timeOfDay = new Date().getHours();
-    const locker = document.querySelectorAll(".locker");
-    const names = document.querySelectorAll("p");
-    let screenSize = window.innerWidth;
-
-    if (screenSize > 768) {
-      if (timeOfDay >= 19 && timeOfDay <= 24){
-        document.body.style.backgroundColor = "black";
-        document.querySelector("h1").style.color = "white";
-        
-        for (let i = 0; i < locker.length; i++){
-          locker[i].style.backgroundColor = "grey";
-          names[i].style.color = "grey";
-
-          locker[i].addEventListener("mouseover", function(){
-            names[i].style.color = "white";
-          })
-
-          locker[i].addEventListener("mouseout", function(){
-            names[i].style.color = "grey";
-          })
-        }
-      }
-    } else {
-      for (let i = 0; i < names.length; i++){
-        names[i].style.color = "white";
-        locker[i].style.backgroundColor = "grey";
-        document.body.style.backgroundColor = "black";
-        document.querySelector("h1").style.color = "white";
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

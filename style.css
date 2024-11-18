@@ -1,0 +1,71 @@
+@import url('https://fonts.cdnfonts.com/css/trebuchet-ms-2');
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 2px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    transition: all 1s;
+    margin-left: 12px;
+    color: white;
+}
+
+.locker-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+
+.locker {
+    width: 250px;
+    height: 150px;
+    background-color: black;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-out;
+}
+
+.locker:hover {
+    transform: translateY(-5px);
+    p {
+        color: white;
+    }
+}
+
+@media (min-width: 600px) {
+    .locker-main {
+        width: 600px;
+    }
+
+    p {
+        color: black;
+    }
+}
+
+@media (min-width: 768px) {
+    .locker-main {
+        width: 600px;
+    }
+    
+    p {
+        color: white;
+    }
+}
