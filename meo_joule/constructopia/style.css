@@ -319,7 +319,7 @@ hr {
     display: none;
   }
 
-  .responsive-column {
+  .responsive-column, .list {
     flex-direction: column;
   }
 
