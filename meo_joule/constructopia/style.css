@@ -344,8 +344,8 @@ hr {
     align-items: start;
   }
 
-  #investors-one h2 {
+  #investors-one h2, .benefits span {
     width: 100%;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
 }
