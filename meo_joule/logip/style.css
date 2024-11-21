@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  background-color: #1f1f1f;
+  background-color: #e0dfdf;
   /* e0dfdf */
   padding: 25px;
   font-family: Montserrat;
@@ -22,9 +22,17 @@ body {
 }
 
 .left li {
+  border: 1px solid #f4f4f4;
   list-style: none;
+  padding: 5px 3px;
   margin: 10px 0;
   width: 100%;
+}
+
+.left li:hover{
+  /* background-color: white; */
+  border: 1px solid grey;
+  border-radius: 10px;
 }
 
 .left li a {
