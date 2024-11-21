@@ -82,16 +82,15 @@ button {
   padding: 30px;
   display: flex;
   justify-content: center;
-  border: solid white;
 }
 
-.expert {
+#expert {
   position: relative;
   padding-top: 60px;
   margin-right: 40px;
 }
 
-.expert img {
+#expert img {
   width: 24px;
   height: 24px;
   border: 2px solid white;
@@ -110,15 +109,15 @@ button {
   margin-right: 50px;
 }
 
-.no-1 {
+#no-1 {
   margin-top: 120px;
 }
 
-.no-1 p {
+#no-1 p {
   width: 120px;
 }
 
-.no-1 div {
+#no-1 div {
   width: 40px;
   height: 40px;
   padding: 8px;
@@ -312,4 +311,19 @@ hr {
   font-size: 10px;
   font-weight: 200;
   /* line-height: 20px; */
+}
+
+@media screen and (max-width: 600px) {
+  .responsive-display {
+    display: none;
+  }
+
+  h1 {
+    padding: 0 15px;
+    line-height: 50px;
+  }
+
+  nav {
+    padding: 15px 20px;
+  }
 }
