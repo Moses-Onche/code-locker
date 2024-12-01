@@ -252,6 +252,14 @@ hr {
   width: 45%;
 }
 
+.founder-socials {
+  background-color: rgb(214, 211, 211);
+  border-radius: 4px;
+  padding: 10px;
+  /* width: 60px;
+  height: 60px; */
+}
+
 .support {
   display: flex;
   justify-content: space-between;
