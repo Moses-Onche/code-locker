@@ -201,13 +201,13 @@ button:hover {
 .list {
   margin: 40px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* border: solid; */
 }
 
 .list h2 {
-  width: 30%;
+  width: 250px;
 }
 .list img {
   width: 220px;
@@ -319,7 +319,7 @@ hr {
     display: none;
   }
 
-  .responsive-column, .list {
+  .responsive-column {
     flex-direction: column;
   }
 
@@ -347,5 +347,24 @@ hr {
   #investors-one h2, .benefits span {
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  .list {
+    justify-content: start;
+  }
+
+  .list h2 {
+    font-size: 20px;
+    margin-left: 30px;
+    width: 150px;
+  }
+
+  .list p {
+    margin: 20px 0;
+    width: 400px;
+  }
+
+  .list span {
+    display: none;
   }
 }
