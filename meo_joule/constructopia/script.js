@@ -8,13 +8,13 @@ for (let i = 0; i < accordion.length; i++) {
         if (accordionSwitch === false) {
             accordion[i].parentElement.style.backgroundColor = "rgb(231, 231, 231)";
             accordion[i].parentElement.style.border = "1px solid #0a7518"
-            chevron.setAttribute("name", "chevron-up")
+            accordion[i].children[1].setAttribute("name", "chevron-up")
             accText[i].style.display = "block";
             accordionSwitch = true;
         } else {
             accordion[i].parentElement.style.backgroundColor = "white";
             accordion[i].parentElement.style.border = "1px solid rgb(231, 231, 231)"
-            chevron.setAttribute("name", "chevron-down")
+            accordion[i].children[1].setAttribute("name", "chevron-down")
             accText[i].style.display = "none";
             accordionSwitch = false;
         }
