@@ -319,6 +319,11 @@ hr {
   padding: 0px;
 }
 
+.accordion-text {
+  color: grey;
+  display: none;
+}
+
 .renew {
   background-color: #003B3E;
   padding: 70px;
@@ -344,6 +349,28 @@ hr {
   font-size: 10px;
   font-weight: 200;
   /* line-height: 20px; */
+}
+
+.foot {
+  padding: 0 100px;
+}
+
+.foot > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot > div > ul{
+  list-style: none;
+}
+
+.foot > div > ul > li {
+  margin: 20px 0;
+}
+
+.foot > div > ul > li > a {
+  text-decoration: none;
+  color: grey;
 }
 
 @media screen and (max-width: 600px) {
