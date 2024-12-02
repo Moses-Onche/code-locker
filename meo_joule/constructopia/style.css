@@ -244,12 +244,13 @@ hr {
 }
 
 #cofounders{
-  width: 50%;
+  width: 60%;
   border-radius: 20px;
 }
 
 .founder-section {
-  width: 45%;
+  width: 40%;
+  margin-left: 40px;
 }
 
 .founder-title {
@@ -267,11 +268,18 @@ hr {
 }
 
 .founder-socials {
-  background-color: rgb(214, 211, 211);
+  width: max-content;
+  display: flex;
+}
+
+.founder-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  background-color: rgb(236, 231, 231);
   border-radius: 4px;
-  padding: 10px;
-  /* width: 60px;
-  height: 60px; */
+  padding: 2px;
 }
 
 .support {
