@@ -19,6 +19,10 @@ h2 {
   font-size: 28px;
 }
 
+.grey-text {
+  color: grey;
+}
+
 .hero {
   background-color: #003B3E;
   padding-bottom: 100px;
@@ -239,8 +243,6 @@ hr {
   display: flex;
   justify-content: space-between;
   padding: 0 100px;
-  /* height: 10%; */
-  border: solid;
 }
 
 #cofounders{
@@ -265,6 +267,7 @@ hr {
 .founder-image {
   width: 50px;
   height: 50px;
+  border-radius: 8px;
 }
 
 .founder-socials {
@@ -277,9 +280,13 @@ hr {
   justify-content: center;
   align-items: center;
   margin-right: 12px;
-  background-color: rgb(236, 231, 231);
+  background-color: rgb(245, 240, 240);
   border-radius: 4px;
   padding: 2px;
+}
+
+#founder-line {
+  margin: 40px 0;
 }
 
 .support {
@@ -299,8 +306,9 @@ hr {
 .accordion div {
   width: 100%;
   padding: 0 16px;
-  border: solid 2px rgb(231, 231, 231);
+  border: solid 1px rgb(231, 231, 231);
   border-radius: 20px;
+  margin-bottom: 14px;
 }
 
 .accordion-option {
@@ -309,12 +317,6 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  border: solid;
-}
-
-.accordion div p {
-  border: solid;
-  /* margin: 8px 0; */
 }
 
 .renew {
@@ -396,5 +398,18 @@ hr {
 
   .list span {
     display: none;
+  }
+
+  .cofounders {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  #cofounders, .founder-section {
+    width: 100%;
+  }
+
+  .founder-section {
+    margin-left: 0;
   }
 }
