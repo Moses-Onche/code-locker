@@ -152,6 +152,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 #partner-logos img {
