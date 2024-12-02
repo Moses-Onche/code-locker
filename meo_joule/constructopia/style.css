@@ -46,7 +46,9 @@ nav {
   color: white;
 }
 
-.logo span:last-child {
+#second-logo {
+  margin-left: 15px;
+  font-size: 20px;
   color: black;
 }
 
