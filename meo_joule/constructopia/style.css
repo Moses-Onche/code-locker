@@ -450,4 +450,29 @@ hr {
   .founder-section {
     margin-left: 0;
   }
+
+  .support {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #F2F9F1;
+    div {
+      width: 100%;
+      button {
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .accordion > div {
+    background-color: white;
+  }
+
+  .renew {
+    margin: 30px 20px;
+    p {
+      width: 80%;
+    }
+  }
 }
