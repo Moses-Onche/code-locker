@@ -362,6 +362,7 @@ hr {
 
 .foot > div > ul{
   list-style: none;
+  padding: 0;
 }
 
 .foot > div > ul > li {
