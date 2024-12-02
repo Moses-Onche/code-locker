@@ -35,18 +35,22 @@ nav {
   padding: 15px 60px;
 }
 
-nav #logo {
+.logo {
   display: flex;
   align-items: center;
 }
 
-nav span span {
+.logo span {
   margin-left: 15px;
   font-size: 20px;
   color: white;
 }
 
-nav span img {
+.logo span:last-child {
+  color: black;
+}
+
+.logo img {
   border-radius: 4px;
 }
 
@@ -473,6 +477,16 @@ hr {
     margin: 30px 20px;
     p {
       width: 80%;
+    }
+  }
+
+  .foot {
+    padding: 20px;
+    li {
+      font-size: 14px;
+    }
+    a {
+      font-size: 12px;
     }
   }
 }
