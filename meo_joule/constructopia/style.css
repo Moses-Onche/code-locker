@@ -504,6 +504,12 @@ hr {
 
   .foot {
     padding: 20px;
+    div {
+      justify-content: start;
+    }
+    ul {
+      margin-right: 30px;
+    }
     li {
       font-size: 14px;
     }
